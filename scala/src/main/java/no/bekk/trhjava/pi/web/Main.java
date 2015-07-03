@@ -17,7 +17,7 @@ public class Main {
 
     @Bean
     public ActorRef stringActor() {
-        return actorSystem().actorOf(StringActor.mkProps());
+        return actorSystem().actorOf(StringActor.mkProps(), "StringActor");
     }
 
     public static void main(String[] args) {
